@@ -1,11 +1,14 @@
 import './App.css';
+import './styles/_styles.scss'
+import 'normalize.css/normalize.css';
+
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>This is the work prototype</h1>
-      </header>
+      <Header />
+      <div className="gradient-bar"></div>
     </div>
   );
 }
