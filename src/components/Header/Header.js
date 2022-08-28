@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <h1>David</h1>
       <nav>
-        <div className="header-flexi">        
+        +<div className="header-flexi">        
           <div>
             <FontAwesomeIcon icon="clock-rotate-left" className="clock-rotate-left" />
             <p>Flexi</p>

@@ -2,7 +2,15 @@ html {
   font-size: 62.5%
 }
 
-p { margin: 0; padding: 0}
+p { margin: 0; padding: 0};
+
+
+.m { font-size: $m-size};
+.l { font-size: $l-size};
+.xl { font-size: $xl-size};
+.xxl { font-size: $xxl-size};
+.xl {font-size: $xl-size }
+
 
 body {
   // https://uigradients.com/#Royal

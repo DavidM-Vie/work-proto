@@ -10,6 +10,10 @@ header{
 
 }
 
+header > h1 {
+  font-size: $xxl-size
+}
+
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -39,5 +43,5 @@ header .plane-departure {
 
 header .flexi-count,
 header .holiday-count {
-  font-size: $l-size
+  font-size: $m-size
 }
