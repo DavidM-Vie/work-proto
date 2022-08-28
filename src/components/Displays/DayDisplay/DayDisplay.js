@@ -1,6 +1,5 @@
 import React from 'react';
 
-import moment from 'moment';
 
 import TimeInput from  '../../TimeInput/TimeInput';
 import ShiftTimes from './Times/ShiftTimes/ShiftTimes';
