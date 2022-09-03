@@ -6,11 +6,12 @@ const TimeInput = (props) => {
      props.onTimeChange(e, props.toUpdate)
   }
 
+  console.log('what the fuck are props? ', props)
 
   return (
     <>
-    <label htmlFor="{props.name}">{props.lbl}</label>
-    <input type="time" id="{props.time}" name="{props.time}" min="08:00" max="18:30" onChange={onChange} required />
+    <label htmlFor={props.name}>{props.lbl}</label>
+    <input type="time" id={props.id} name={props.name} min="08:00" max="18:30" onChange={onChange} disabled={props.disabled} value={props.value} required/>
     </>
   )
 }

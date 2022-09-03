@@ -3,7 +3,7 @@ import moment from 'moment';
 
 import TimeInput from '../../../../TimeInput/TimeInput'
 
-const ShiftTimes = () => {
+const ShiftTime = () => {
 
    const [ startTime,  setStartTime ] = useState()
    const [ endTime, setEndTime ] =  useState(); 
@@ -14,11 +14,16 @@ const ShiftTimes = () => {
    }  
 
   return (
-    <div className="shift-times">
-      <TimeInput lbl="Start" name="shiftStart" startTime={startTime} onTimeChange={onTimeChange} toUpdate="start"/>
-      <TimeInput lbl="End" name="shiftEnd" endTime={endTime} onTimeChange={onTimeChange} toUpdate="end"/>
-  </div>
+    <div className="shift-time">
+      <div>
+        <TimeInput lbl="Start:" id="shiftStart" name="shiftStart" startTime={startTime} onTimeChange={onTimeChange} toUpdate="start"/>
+      </div>
+      <div>
+        <TimeInput lbl="End:" id="shiftEnd" name="shiftEnd" endTime={endTime} onTimeChange={onTimeChange} toUpdate="end"/>
+      </div>
+      
+    </div>
   )
 }
 
-export default ShiftTimes
+export default ShiftTime
