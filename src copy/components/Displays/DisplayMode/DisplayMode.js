@@ -6,27 +6,24 @@ const DisplayMode = () => {
 
   const checkMode = () => {
     if(state === 'weekly') {
-      return <h4>Weekly: "week here"</h4>
+      return <h2>Weekly: "week here"</h2>
     }else if (state === 'monthly') { 
-      return <h4>Monthly: "month here"</h4>
+      return <h2>Monthly: "month here"</h2>
     }else {
-      return <h4>Daily: "date here"</h4>
+      return <h2>Daily: "date here"</h2>
     }
   }
 
   return (
-    <>
     <div className="display-mode">
       <div>
-        <h3 className="l chosen">Daily</h3><h3 className="l">Weekly</h3><h3 className="l">Monthly</h3>
+        <h1 className="xxl">Daily </h1><h3 className="m">Weekly</h3><h3 className="m">Monthly</h3>
 
       </div>   
-
+      {
+        checkMode()
+      } 
     </div>
-    {
-      checkMode()
-    } 
-    </>
   )
 }
 

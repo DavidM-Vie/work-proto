@@ -1,0 +1,43 @@
+.lunch-time {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+
+
+.lunch-time > div {
+  display: flex;
+  // background: lighten($dk-blue, 5%)
+}
+
+.lunch-time > div:first-child{
+  position: relative;
+  left: -$xl-size;
+}
+
+
+.lunch-time > div:last-child{
+   justify-content: flex-end;
+   position: relative;
+   left: $xl-size;
+}
+
+.lunch-time label {
+  font-size: $l-size;
+  margin-right: $m-size;
+  color: $lt-grey-blue;
+}
+
+.lunch-time input {
+  height: $l-size;
+  font-size: $l-size;
+  background: inherit;
+  border: none;
+  color: white;
+
+}
+
+.lunch-time span {
+  font-size: $m-size;
+}

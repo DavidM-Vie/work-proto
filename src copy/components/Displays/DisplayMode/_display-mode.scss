@@ -8,11 +8,6 @@
   justify-content: center;
 }
 
-.display-mode .chosen {
-  text-decoration: underline;
-  color: white;
-}
-
 .display-mode > div {
   display:flex;
   align-items: center;
@@ -28,5 +23,4 @@
 
 .display-mode > div > h3 {
   margin-left: $l-size;
-  margin-bottom: 0
 }

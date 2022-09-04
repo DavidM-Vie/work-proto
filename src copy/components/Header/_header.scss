@@ -1,0 +1,52 @@
+.gradient-bar{
+  background-color: white;
+  height: 1px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header > h1 {
+  font-size: $xxl-size
+}
+
+header h1 h5 {
+  display: inline;
+  font-size: $m-size;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .header-flexi {
+  margin-right: 100px;
+}
+
+header .header-flexi,
+header .header-holidays {
+  position: relative;
+}
+
+header .clock-rotate-left,
+header .plane-departure {
+   font-size: $huge-size;
+   color: #8482a5;
+   opacity: 0.08;
+   position: absolute;
+   left: -($huge-size + 1);
+}
+
+header .plane-departure {
+  left: -($huge-size + 2.5)
+}
+
+header .flexi-count,
+header .holiday-count {
+  font-size: $m-size
+}
