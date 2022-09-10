@@ -1,0 +1,48 @@
+.signin-container,
+.signup-container {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 80px auto 0 auto;
+  padding: $xl-size;
+  border: .5px solid $sky-blue;
+}
+
+.signin-container h1,
+.signup-container h1 {
+  font-size: $xl-size;
+  margin: 0 0 10px 0;
+}
+
+.signin-container form > div,
+.signup-container form > div {
+  padding-top: $m-size;
+}
+
+.signin-container form label,
+.signup-container form label {
+  margin-right: $m-size;
+  margin-bottom: 10px;
+  font-size: $ml-size;
+  display: block;
+}
+
+.signin-container form input,
+.signup-container form input {
+  height: 30px;
+  font-size: $m-size;
+  min-width: 300px;
+  text-indent: 10px
+}
+
+.signin-container form button,
+.signup-container form button {
+  margin-top: $ml-size;
+  font-size: $ml-size;
+  width: 100%;
+}
+
+.signin-container form button:active,
+.signup-container form button:active {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .5);
+}

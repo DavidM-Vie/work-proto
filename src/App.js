@@ -1,27 +1,44 @@
 import React, {useState} from 'react'
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './styles/_styles.scss'
 import 'normalize.css/normalize.css';
+import { AuthContextProvider } from './context/AuthContext';
 
-import DayDisplay from './components/Displays/DayDisplay/DayDisplay';
-import DisplayMode from './components/Displays/DisplayMode/DisplayMode';
-import Header from './components/Header/Header';
-import StatsBar from './components/StatsBar/StatsBar';
+import Dashboard from './components/Dashboard/Dashboard';
+import Holidays from './components/Holidays/Holidays';
+import ProtectedRoute from './components/ProtectedRoute';
+import SignIn from './components/Auth/SignIn';
+import SignUp from './components/Auth/SignUp';
+import Flexi from './components/Flexi/Flexi';
 
 
 function App() {
 
-  const [mode, setMode ] = useState('day')
-  // hook up which Display component is rendered based off of selected mode,  where "day" is default, other options would be 'week' or 'month'
-
   return (
     <div className="App">
-      <Header />
-      <div className="gradient-bar"></div>
-      <StatsBar />
-      <DisplayMode />
-      <DayDisplay />
+    <AuthContextProvider>
+      <Routes>
+
+        <Route path="/signup" element={<SignUp />} />
+        <Route 
+          path="/dashboard" 
+          element={<ProtectedRoute><Dashboard /></ProtectedRoute>} 
+        />
+        <Route 
+          path="/holidays" 
+          element={<ProtectedRoute><Holidays /></ProtectedRoute>} 
+        />
+        <Route 
+          path="/flexi" 
+          element={<ProtectedRoute><Flexi /></ProtectedRoute>} 
+        />
+        <Route path="/" element={<SignIn />} />
+      </Routes>    
+    </AuthContextProvider>
+
     </div>
+
   );
 }
 

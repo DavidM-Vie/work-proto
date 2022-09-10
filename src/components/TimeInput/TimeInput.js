@@ -6,8 +6,6 @@ const TimeInput = (props) => {
      props.onTimeChange(e, props.toUpdate)
   }
 
-  console.log('what the fuck are props? ', props)
-
   return (
     <>
     <label htmlFor={props.name}>{props.lbl}</label>

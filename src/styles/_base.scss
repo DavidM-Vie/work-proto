@@ -3,7 +3,14 @@ html {
 }
 
 p { margin: 0; padding: 0};
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; padding: 0;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .m { font-size: $m-size};
 .l { font-size: $l-size};
@@ -28,6 +35,15 @@ button {
   cursor: pointer;
 }
 
+button.btn1 {
+  background: darken($sky-blue, 15%);
+  color: white; 
+  text-align: center;
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
 button:disabled {
-  cursor: default
+  cursor: default;
 }

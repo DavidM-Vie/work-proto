@@ -15,7 +15,7 @@ const LunchTime = () => {
  return (
    <div className="lunch-time">
      <div>
-       <TimeInput lbl="Lunch Start:" id="lunchStart" name="lunchStart" startTime={startTime} onTimeChange={onTimeChange} toUpdate="start" value="13:00" disabled="true" readonly="true"/>
+       <TimeInput lbl="Lunch Start:" id="lunchStart" name="lunchStart" startTime={startTime} onTimeChange={onTimeChange} toUpdate="start" value="13:00" disabled={true} readonly="true"/>
      </div>
      <span>to</span>
      <div>
